@@ -1,0 +1,34 @@
+{
+  "name": "@foxzilla/firefront-sdk",
+  "version": "0.0.1-alpha.1",
+  "description": "Some tools for FireFront.",
+  "main": "",
+  "scripts": {
+    "firebean-example": "opn http://127.0.0.1:2333/firebean-example && http-server -p 2333 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoXZilla/FireFront-sdk.git"
+  },
+  "keywords": [
+    "FireBlog",
+    "FireFront",
+    "FireBean"
+  ],
+  "author": "FoXZilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FoXZilla/FireFront-sdk/issues"
+  },
+  "homepage": "https://github.com/FoXZilla/FireFront-sdk#readme",
+  "devDependencies": {
+    "@foxzilla/fireblog": "0.0.1-alpha.10",
+    "@types/node": "^9.4.6",
+    "http-server": "^0.11.1",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "url-parse": "^1.2.0"
+  }
+}

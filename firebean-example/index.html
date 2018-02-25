@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>firebean-example</title>
+</head>
+<body>
+<p>
+    <label>QueryString:<input type="text" id="query-string" value="_close=1"></label>
+</p>
+<p>
+    open _firebean.html by:
+    <ul>
+        <li><a id="open-by-a" href="_firebean" target="_blank">&lt;a target="_blank"&gt;</a></li>
+        <li><a id="open-by-js" href="###">window.open(url,'_blank')</a></li>
+    </ul>
+</p>
+<script>
+    var queryStringInput =document.querySelector('#query-string');
+    queryStringInput.addEventListener('input',function _self(){
+        document.querySelector('#open-by-a').href ='_firebean?'+queryStringInput.value;
+        return _self;
+    }());
+    document.querySelector('#open-by-js').addEventListener('click',function(event){
+        event.preventDefault();
+        window.open('_firebean?'+queryStringInput.value,'_blank');
+    });
+</script>
+</body>
+</html>
